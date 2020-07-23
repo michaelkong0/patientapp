@@ -1,0 +1,19 @@
+.sign-up {
+    width: 30%;
+    display: inline-block;
+    justify-content: center;
+}
+
+.sign-up-form{
+    padding: 50px;
+    display: inline-block;
+    text-align: center;
+    
+   
+}
+
+.cent{
+    display: inline-block;
+    text-align: center;
+    font-family: 'Lato';
+}

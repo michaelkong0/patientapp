@@ -4,6 +4,7 @@ import './App.css';
 import { Switch, Route, } from 'react-router-dom';
 
 import FirstPage from './pages/first-page/first-page.component';
+import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 
 class App extends React.Component {
   constructor(){
@@ -25,7 +26,7 @@ class App extends React.Component {
        
         <Switch>
           <Route exact path='/' component={ FirstPage } />
-          <Route exact path='/sign' component={ FirstPage } />
+          <Route exact path='/sign' component={ SignInAndSignUpPage } />
         </Switch>
       </div>
     );

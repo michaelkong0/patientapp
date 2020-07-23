@@ -1,0 +1,11 @@
+.sign-in-and-sign-up{
+    display: flex;
+    justify-content: center;
+    /* width: 80%; */
+}
+
+.vert {
+    border-left: 3px solid red;
+    height: 500px;
+    
+  }

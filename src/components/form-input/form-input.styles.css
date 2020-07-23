@@ -1,0 +1,21 @@
+.form-input{
+    width: 80%;
+    border: 0px solid transparent;
+    border-radius: 3px;
+    border-bottom: 2px solid red;
+    padding-top:8px;
+    padding-bottom: 0px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.form-input:hover{
+    width: 80%;
+    border: 0px solid transparent;
+    border-radius: 3px;
+    border-bottom: 2px solid blue;
+    padding-top:8px;
+    padding-bottom: 5px;
+    margin-top: 13px;
+    margin-bottom: 8px;
+}
