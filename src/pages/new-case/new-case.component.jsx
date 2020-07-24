@@ -1,5 +1,7 @@
 import React from 'react';
 import './new-case.styles.css';
+import {Link, withRouter} from 'react-router-dom';
+import CustomButton from '../../components/custom-button/custom-button.component';
 //import CustomToggle from '../../components/custom-toggle-button/custom-toggle-button.component';
 
 
@@ -46,6 +48,7 @@ class NewCase extends React.Component{
                         <option value = 'stomach'>Stomach</option>
 
                     </select>
+                    <Link to = '/confirmation'><CustomButton>Submit</CustomButton></Link>
                </form>
                
                
@@ -56,4 +59,4 @@ class NewCase extends React.Component{
 
 
 
-export default NewCase;
+export default withRouter(NewCase);
