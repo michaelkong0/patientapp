@@ -8,6 +8,8 @@ import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up
 import Selection from './pages/selection/selection.component';
 import NewCase from './pages/new-case/new-case.component';
 import Confirmation from './pages/confirmation/confirmation.component';
+import OldCase from './pages/old-case/old-case.component';
+import Confirmation1 from './pages/confirmation/confirmation1.component';
 
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
@@ -56,8 +58,9 @@ class App extends React.Component {
           <Route exact path='/sign' component={ SignInAndSignUpPage } />
           <Route exact path='/selection' component={ Selection } />
           <Route exact path='/newcase' component={ NewCase } />
-          <Route exact path='/oldcase' component={ Selection } />
+          <Route exact path='/oldcase' component={ OldCase } />
           <Route exact path='/confirmation' component={ Confirmation } />
+          <Route exact path='/confirmation1' component={ Confirmation1 } />
         </Switch>
       </div>
     );

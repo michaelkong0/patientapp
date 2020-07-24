@@ -1,8 +1,13 @@
 .first{
+    background-image: url('https://i.ibb.co/hXhmpkq/logo.png');
+    background-repeat: no-repeat;
     
+    background-size: contain;
+    background-position: center;
     justify-content: center;
     text-align: center;
     margin: auto;
     padding: 10px;
     font-family: 'Lato';
+    font-weight: bold;
 }

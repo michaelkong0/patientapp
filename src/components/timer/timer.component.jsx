@@ -44,7 +44,7 @@ class Timer extends Component {
         const { minutes, seconds } = this.state
         return (
             <div>
-                {this.renderRedirect()}
+                
                 { minutes === 0 && seconds === 0
                     ? <Redirect to="/"/>
                     : <h1>Returning to start page in: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</h1>

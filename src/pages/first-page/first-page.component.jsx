@@ -27,6 +27,8 @@ class FirstPage extends React.Component{
         return(
         <div className ='first'> 
             {this.renderRedirect()}
+            <h1>Welcome to Panacea!</h1>
+            <br/>
             <h1>Select Language</h1>
             <CustomButton onClick= {this.setRedirect}> English </CustomButton>
             <br></br>

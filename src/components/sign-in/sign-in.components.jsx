@@ -1,4 +1,5 @@
 import React from 'react';
+import {withRouter, Redirect} from 'react-router-dom';
 
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
@@ -26,6 +27,7 @@ class SignIn extends React.Component{
         try{
             await auth.signInWithEmailAndPassword(email, password);
             this.setState({email: '', password: ''});
+            
         } catch(error){
             alert('Email/Password combination is incorrect!');
             console.log(error);
@@ -86,4 +88,4 @@ class SignIn extends React.Component{
     }
 }
 
-export default SignIn;
+export default withRouter(SignIn);

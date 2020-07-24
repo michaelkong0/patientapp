@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, withRouter, Link } from 'react-router-dom';
+import {withRouter, Link } from 'react-router-dom';
 import './selection.styles.css';
 import CustomButton from '../../components/custom-button/custom-button.component';
 
@@ -18,19 +18,7 @@ class Selection extends React.Component{
 
 
    
-      renderRedirect = () => {
-        if (this.state.redirect) {
-          return <Redirect to={this.state.location} />
-        }
-      }
-
-      handleRedirect = (loc) =>{
-          this.setState({
-            location: loc,
-            redirect:true
-          });
-          
-      }
+      
 
 
     render(){
