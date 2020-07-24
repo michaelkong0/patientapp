@@ -7,6 +7,7 @@ import FirstPage from './pages/first-page/first-page.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
+import Camera from "./pages/camera/camera.component"
 
 class App extends React.Component {
   constructor(){
@@ -50,6 +51,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={ FirstPage } />
           <Route exact path='/sign' component={ SignInAndSignUpPage } />
+          <Route exact path='/camera' component={ Camera } />
         </Switch>
       </div>
     );
