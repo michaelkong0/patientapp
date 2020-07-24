@@ -1,3 +1,17 @@
 .caseForm{
-    font-family: 'Lato'
+    
+    
+    border: 3px solid #c1c8e4;
+    border-radius: 3px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    text-align: left;
+    padding: 8px;
+}
+
+.title{
+    text-align: center;
 }

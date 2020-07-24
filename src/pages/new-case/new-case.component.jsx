@@ -14,8 +14,11 @@ class NewCase extends React.Component{
 
     render(){
         return(
-            <div>
+            
+            <div className = 'addMargin'>
+               
                <form className = 'caseForm'>
+                    <h2 className = 'title'> Symptoms form</h2>
                     <input type = 'checkbox' id= 'fever' name= 'fever' value = 'true' ></input>
                     <label for='fever'>Do you have a fever above 38 degrees Celcius (100.6 degrees F)?</label>
                     <br/>
@@ -34,7 +37,7 @@ class NewCase extends React.Component{
                     <input type = 'checkbox' id= 'bone' name= 'bone' value = 'bone' ></input>
                     <label for='bone'> Have you dislocated/broken anything?</label>
                     <br/>
-                    <label for='pain'> Do you have pain in any of these areas? </label>
+                    <label for='pain'> Do you have pain in any of these areas? (Use "Ctrl" or "Cmd" to select multiple)</label>
                     <br/>
                     <select name = 'pain'id = 'pain' multiple>
                         <option value = 'heart'>Heart</option>
