@@ -5,6 +5,8 @@ import { Switch, Route, } from 'react-router-dom';
 
 import FirstPage from './pages/first-page/first-page.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
+import Selection from './pages/selection/selection.component';
+import NewCase from './pages/new-case/new-case.component';
 
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
@@ -50,6 +52,9 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={ FirstPage } />
           <Route exact path='/sign' component={ SignInAndSignUpPage } />
+          <Route exact path='/selection' component={ Selection } />
+          <Route exact path='/newcase' component={ NewCase } />
+          <Route exact path='/oldcase' component={ Selection } />
         </Switch>
       </div>
     );
