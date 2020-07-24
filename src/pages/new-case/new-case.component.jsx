@@ -48,6 +48,7 @@ class NewCase extends React.Component{
                         <option value = 'stomach'>Stomach</option>
 
                     </select>
+                    <br></br>
                     <Link to = '/confirmation'><CustomButton>Submit</CustomButton></Link>
                </form>
                
