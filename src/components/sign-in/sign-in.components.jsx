@@ -1,5 +1,5 @@
 import React from 'react';
-import {withRouter} from 'react-router-dom';
+import {withRouter,Link} from 'react-router-dom';
 
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
@@ -9,10 +9,11 @@ import GoogleButton from 'react-google-button';
 
 import './sign-in.styles.css'
 
+
 class SignIn extends React.Component{
     constructor(props){
         super(props);
-
+        //this.history = useHistory();
         this.state = {
             email: '',
             password: ''
@@ -27,6 +28,7 @@ class SignIn extends React.Component{
         try{
             await auth.signInWithEmailAndPassword(email, password);
             this.setState({email: '', password: ''});
+            //this.history.push('/selection');
             
         } catch(error){
             alert('Email/Password combination is incorrect!');
@@ -70,16 +72,16 @@ class SignIn extends React.Component{
                         required />
                     
                     <br/>
-                    <CustomButton type="submit"> Sign In </CustomButton>
+                    <Link to ='/selection'><CustomButton type="submit"> Sign In </CustomButton></Link>
                     <br></br>
                     <br></br>
                     <hr/>
                     <br></br>
 
                     <div className = 'cen'>
-                    <GoogleButton 
+                    <Link to='/selection'><GoogleButton 
                     onClick={ signInWithGoogle}
-                    />
+                    /></Link>
                     
                     </div>
                 </form>

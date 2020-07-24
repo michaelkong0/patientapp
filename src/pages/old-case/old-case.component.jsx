@@ -9,7 +9,7 @@ class OldCase extends React.Component{
         return 'Yash Kankariya';
     }
     getMessage(){
-        return 'Placeholder message: sefjosefjisejfosoefjseojfeofjsojfsoeijf';
+        return 'You have gotten Tuberculosis. The best treatment is bedrest with rifampin, pyrazinamide and ethambutol. If you cannot get these, please let us know and we will help you aquire some.';
     }
     render(){
         return(
